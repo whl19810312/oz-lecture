@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1 id="header-title">문서의 제목입니다.</h1>
+    <nav>
+      <ul>
+        <li class="link">Link : <a href="#home">홈</a></li>
+        <li class="link">Link : <a href="#about">소개 Tag</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr />
+  <main>
+    <form id="registration-form">
+      <p class="form-group">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name">
+      </p>
+      <p class="form-group">
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email">
+      </p>
+      <p class="form-group">
+        <label for="message">메시지</label>
+        <textarea id="message" name="message"></textarea>
+      </p>
+      <input type="text" name="username" />
+      <input type="email" name="useremail" />
+      <a href="https://example.com">링크</a>
+      <button type="submit">제출</button>
+      <button type="reset">초기화</button>
+    </form>
+    
+    <h2>주요콘텐츠</h2>
+    <section style="border: 3px solid gray">
+      <h3 class="article-title">주제</h3>
+      <p>
+        상세내용 상세내용 상세내용 상세내용 상세내용 Tag 상세내용 상세내용
+        상세내용 Tag
+      </p>
+    </section>
+    <select name="country" multiple>
+      <option value="South Korea">한국</option>
+      <option value="America">미국</option>
+      <option value="Japan">일본</option>
+    </select>
+    <article>
+      <h3 class="article-title">기사제목</h3>
+      <p>
+        기사본문 기사본문 기사본문 기사본문 기사본문 기사본문 기사본문
+        기사본문Tag
+      </p>
+    </article>
+    <div id="container">
+      <button class="container-btn">컨테이너버튼</button>
+      <ul>
+        <li class="container-item">항목1</li>
+        <li class="container-item">항목2</li>
+        <li class="container-item">항목3</li>
+        <li class="container-item">항목4</li>
+      </ul>
+    </div>
+  </main>
+  <hr />
+  <aside>
+    <h3>관련 링크</h3>
+    <ul>
+      <li><a href="#ad">광고</a></li>
+      <li><a href="#privacy-term">개인정보확인</a></li>
+      <li><a href="#user-term">이용약관</a></li>
+    </ul>
+  </aside>
+  <hr />
+  <footer>
+    <p>&copy; All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

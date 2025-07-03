@@ -1,0 +1,47 @@
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    padding: 2rem;
+    /* padding: 32px; */
+    background-color: lightblue;
+}
+main {
+    padding: 1rem;
+    /* padding: 16px; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* gap: 16px; */
+}
+.box {
+    width: 100%;
+    /* padding: 16px; */
+    padding: 1rem;
+    /* margin-bottom: 16px; */
+    margin-bottom: 1rem;
+    background-color: lightcoral;
+    text-align: center;
+    box-sizing: border-box;
+}
+/* 태블릿 */
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .box {
+        width: calc(47%);
+    }
+}
+/* 데스크톱: 1024px 이상 */
+@media screen and (min-width: 1024px) {
+    .box {
+        width: calc(33.33% - 0.7rem)
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>User Registration</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Register">Register</a></li>
+        <li><a href="#About">About</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Registration Forms</h2>
+      <form action="#" method="POST">
+        <label for="username">사용자 이름</label>
+        <input type="text" id="username" name="username" placeholder="사용자 이름" required/>
+        <label for="password">비밀 번호</label>
+        <input type="password" id="password" name="password" placeholder="비밀번호" required/>
+        <div>
+          <h3>성별을 선택해주세요</h3>
+          <label for="male">남성</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="female">여성</label>
+          <input type="radio" id="female" name="gender" value="female" />
+        </div>
+        <div>
+          <h3>취미를 선택해주세요</h3>
+          <label for="reading">독서</label>
+          <input type="checkbox" id="reading" name="hobby" value="reading" />
+          <label for="gaming">게임</label>
+          <input type="checkbox" id="gaming" name="hobby" value="gaming" />
+          <label for="fishing">낚시</label>
+          <input type="checkbox" id="fishing" name="hobby" value="fishing" />
+        </div>
+        <div>
+          <h3>국가를 선택해주세요</h3>
+          <select name="country" multiple>
+            <option value="South Korea">한국</option>
+            <option value="America">미국</option>
+            <option value="Japan">일본</option>
+          </select>
+        </div>
+        <div>
+          <h3>기타정보</h3>
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" />
+          <label for="birthday">생일</label>
+          <input type="date" id="birthday" name="birthdate" value="2018-07-22" requiredplaceholder="생일을 선택하세요" />
+          <label for="age">나이</label>
+          <input type="number" id="age" name="age" min="18" max="100" value="18"/>
+          <label for="satisfy">만족도</label>
+          <input type="range" id="satisfy" name="satisfy" min="1" max="10" value="10"/>
+        </div>
+        <hr />
+        <button type="submit">제출</button>
+        <button type="reset">초기화</button>
+      </form>
+      <article>
+        <p>Why Register? Registering allows you to access exclusive features...</p>
+      </article>
+      <aside>
+        <p>Registration Tips</p>
+        <svg width="100" height="100">
+          <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="blue" />
+        </svg>
+        <canvas width="100" height="100">
+          <!-- 켄버스 안에서 태그만으로 그림 그리는것 모름 -->
+        </canvas>
+        <video width="300" height="200" controls>
+          <source src="./media/test.mp4" type="video/mp4">
+        </video>
+      </aside>
+      <footer>
+        &copy;Whl 2025
+      </footer>
+    </section>
+  </body>
+</html>
