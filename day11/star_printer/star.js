@@ -12,8 +12,8 @@ function print_star(count) {
 	let starts = '';
 	for(let i = 0; i < count; i++) {
 		starts +='*';
+		console.log(starts);
 	}
-	console.log(starts);
 }
 
 function main() {	
