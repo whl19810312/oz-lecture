@@ -8,11 +8,44 @@ function validation(count, MAX) {
 	}
 }
 
-function print_star(count) {
+//left
+function print_star_left(count) {
 	let starts = '';
-	for(let i = 0; i < count; i++) {
+
+	for(i = 0; i < count; i++) {
 		starts +='*';
 		console.log(starts);
+	}
+}
+
+//right
+function print_star_right(count) {
+	let starts = '';
+
+	for(i = 1; i <= count; i++) {
+		let blank = '';
+		for(j = count - i; j > 0; j--) {
+			blank += ' ';
+		}
+		starts +='*';
+		console.log(blank + starts);
+	}
+}
+
+//center
+function print_star_center(count) {
+	let starts = '';
+	let starts_r = '';
+
+	for(i = 1; i <= count; i++) {
+		let blank = '';
+		for(j = count - i; j > 0; j--) {
+			blank += ' ';
+		}
+		starts +='*';
+		if(i != 1 ) starts_r += '*';
+
+		console.log(blank + starts + starts_r);
 	}
 }
 
@@ -36,6 +69,8 @@ function main() {
 		count = MAX;
 	}
 
-	print_star(count);
+	print_star_left(count);
+	print_star_right(count);
+	print_star_center(count);
 }
 
