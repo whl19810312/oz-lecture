@@ -49,6 +49,18 @@ function print_star_center(count) {
 	}
 }
 
+function print_star_box(count) {
+	let starts = '';
+
+	for(i = 0; i < count; i++) {
+		starts +='*';
+	}
+
+	for(i = 0; i < count; i++) {
+		console.log(starts + (i + 1));
+	}
+}
+
 function main() {	
 	console.log('start');
 	const MAX = 100; // const 사용 예시
@@ -72,5 +84,6 @@ function main() {
 	print_star_left(count);
 	print_star_right(count);
 	print_star_center(count);
+	print_star_box(count);
 }
 
