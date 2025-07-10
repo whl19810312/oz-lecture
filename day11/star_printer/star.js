@@ -1,4 +1,10 @@
 main();
+// 화면 콘솔에 메시지 출력하는 함수
+function screenLog(message) {
+	const consoleDiv = document.getElementById('console');
+	consoleDiv.textContent += message + '\n';
+}
+
 
 function validation(count, MAX) {
 	if (isNaN(count) || count <= 0 || count > MAX) {
@@ -14,7 +20,7 @@ function print_star_left(count) {
 
 	for(i = 0; i < count; i++) {
 		starts +='*';
-		console.log(starts);
+		screenLog(starts);
 	}
 }
 
@@ -28,7 +34,7 @@ function print_star_right(count) {
 			blank += ' ';
 		}
 		starts +='*';
-		console.log(blank + starts);
+		screenLog(blank + starts);
 	}
 }
 
@@ -45,7 +51,7 @@ function print_star_center(count) {
 		starts +='*';
 		if(i != 1 ) starts_r += '*';
 
-		console.log(blank + starts + starts_r);
+		screenLog(blank + starts + starts_r);
 	}
 }
 
@@ -57,18 +63,18 @@ function print_star_box(count) {
 	}
 
 	for(i = 0; i < count; i++) {
-		console.log(starts + (i + 1));
+		screenLog(starts + (i + 1));
 	}
 }
 
 function main() {	
-	console.log('start');
+	screenLog('start');
 	const MAX = 100; 
 	let input = prompt("별 갯수를 입력하세요.");
 	let count = Number(input);      
-	
+
 	if (validation(count, MAX) == false) {
-		console.log(`Invalid count! Please enter a number between 0 and ${MAX}.`);
+		screenLog(`Invalid count! Please enter a number between 0 and ${MAX}.`);
 		return;
 	}
 
