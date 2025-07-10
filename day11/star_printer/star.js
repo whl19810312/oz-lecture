@@ -55,6 +55,22 @@ function print_star_center(count) {
 	}
 }
 
+function print_star_center2(count) {
+	let starts = '';
+
+	for(i = 1; i <= count; i++) {
+		let blank = '';
+		for(j = count - i; j > 0; j--) {
+			blank += ' ';
+		}
+
+		starts +='*';
+		if(i != 1) starts +='*';
+
+		screenLog(blank + starts);
+	}
+}
+
 //left-reverse
 function print_star_left_reverse(count) {
 	for(i = count; i > 0; i--) {
@@ -111,7 +127,6 @@ function print_star_box(count) {
 }
 
 function main() {	
-	screenLog('start');
 	const MAX = 100; 
 	let input = prompt("별 갯수를 입력하세요.");
 	let count = Number(input);      
@@ -133,6 +148,7 @@ function main() {
 	setTimeout(() => print_star_center_reverse(count), 500);
 	setTimeout(() => print_star_left_reverse(count), 600);
 	setTimeout(() => print_star_right_reverse(count), 700);
+	setTimeout(() => print_star_center2(count), 800);
 	setTimeout(() => print_star_box(count), 1000);
 }
 
