@@ -55,6 +55,49 @@ function print_star_center(count) {
 	}
 }
 
+//left-reverse
+function print_star_left_reverse(count) {
+	for(i = count; i > 0; i--) {
+		let starts = '';
+		for(j = 0; j < i; j++) {
+			starts +='*';
+		}
+		screenLog(starts);
+	}
+}
+
+//right-reverse
+function print_star_right_reverse(count) {
+	let blank = '';
+
+	for(i = count; i > 0; i--) {
+		let starts = '';
+		for(j = 0; j < i; j++) {
+			starts +='*';
+		}
+		screenLog(blank + starts);
+		blank += ' ';
+	}
+}
+
+//center
+function print_star_center_reverse(count) {
+	let blank = '';
+
+	for(i = count; i > 0; i--) {
+		let starts = '';
+		let starts_r = '';
+		
+		for(j = 0; j < i; j++) {
+			starts +='*';
+			if(j !== (i - 1)) starts_r += '*';
+		}
+
+		screenLog(blank + starts + starts_r);
+		blank += ' ';
+	}
+}
+
 function print_star_box(count) {
 	let starts = '';
 
@@ -84,9 +127,12 @@ function main() {
 		count = MAX;
 	}
 
-	print_star_left(count);
-	print_star_right(count);
-	print_star_center(count);
-	print_star_box(count);
+	setTimeout(() => print_star_left(count), 200);
+	setTimeout(() => print_star_right(count), 300);
+	setTimeout(() => print_star_center(count), 400);
+	setTimeout(() => print_star_center_reverse(count), 500);
+	setTimeout(() => print_star_left_reverse(count), 600);
+	setTimeout(() => print_star_right_reverse(count), 700);
+	setTimeout(() => print_star_box(count), 1000);
 }
 
