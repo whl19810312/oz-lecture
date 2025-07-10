@@ -40,12 +40,13 @@ function print_star_right(count) {
 
 //center
 function print_star_center(count) {
+	const MAX = count / 2;
 	let starts = '';
 	let starts_r = '';
 
-	for(i = 1; i <= count; i++) {
+	for(i = 1; i <= MAX; i++) {
 		let blank = '';
-		for(j = count - i; j > 0; j--) {
+		for(j = MAX - i; j > 0; j--) {
 			blank += ' ';
 		}
 		starts +='*';
@@ -56,11 +57,12 @@ function print_star_center(count) {
 }
 
 function print_star_center2(count) {
+	const MAX = count / 2;
 	let starts = '';
 
-	for(i = 1; i <= count; i++) {
+	for(i = 1; i <= MAX; i++) {
 		let blank = '';
-		for(j = count - i; j > 0; j--) {
+		for(j = MAX - i; j > 0; j--) {
 			blank += ' ';
 		}
 
@@ -100,7 +102,7 @@ function print_star_right_reverse(count) {
 function print_star_center_reverse(count) {
 	let blank = '';
 
-	for(i = count; i > 0; i--) {
+	for(i = (count / 2); i > 0; i--) {
 		let starts = '';
 		let starts_r = '';
 		
