@@ -8,19 +8,19 @@ let div = 10 / 2;
 let remain = 10 % 3;
 let expon = 2 ** 3;
 
-console.log("sum", sum);
-console.log("sub", sub);
-console.log("multi", multi);
-console.log("div", div);
-console.log("remain", remain);
-console.log("expon", expon);
+screenLog("sum", sum);
+screenLog("sub", sub);
+screenLog("multi", multi);
+screenLog("div", div);
+screenLog("remain", remain);
+screenLog("expon", expon);
 
 let sumNum1Num2 = num1 + num2;
 let subNum1Num2 = num1 - num2;
 let subNum2Num1 = num2 + num1;
-console.log("num1 + num2", sumNum1Num2);
-console.log("num1 - num2", subNum1Num2);
-console.log("num2 - num1", subNum2Num1);
+screenLog("num1 + num2", sumNum1Num2);
+screenLog("num1 - num2", subNum1Num2);
+screenLog("num2 - num1", subNum2Num1);
 
 let totalSum = sumNum1Num2 + subNum1Num2 + subNum2Num1;
-console.log("total", totalSum);
+screenLog("total", totalSum);

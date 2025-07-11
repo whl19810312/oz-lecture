@@ -71,7 +71,7 @@ function main() {
 
 	// 입력 유효성 검사 (도전 과제)
 	if (validation(score) == false) {
-		console.log("Invalid score! Please enter a number between 0 and 100.");
+		screenLog("Invalid score! Please enter a number between 0 and 100.");
 		return;
 	}
 
@@ -91,11 +91,11 @@ function main() {
 	let message = get_message(grade, score);
 
 	// 결과 출력
-	console.log("##################");
-	console.log("Final Score: " + score);
-	console.log("Grade: " + grade);
-	console.log("Status: " + status);
-	console.log("Message: " + message);
-	console.log("##################");
+	screenLog("##################");
+	screenLog("Final Score: " + score);
+	screenLog("Grade: " + grade);
+	screenLog("Status: " + status);
+	screenLog("Message: " + message);
+	screenLog("##################");
 }
 

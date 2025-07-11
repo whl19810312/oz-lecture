@@ -21,54 +21,54 @@
       // string 문자열
       let string1 = "작은따옴표(')가 포함됩니다.";
       let string2 = '큰따옴표(")가 포함됩니다.';
-      //   console.log("string1", string1);
-      //   console.log("string2", string2);
+      //   screenLog("string1", string1);
+      //   screenLog("string2", string2);
 
       // string 문자열 연결
       let stringA = "문자열" + " 연결";
       let stringB = string1 + " " + string2;
-      console.log("stringA", stringA);
-      console.log("stringB", stringB);
+      screenLog("stringA", stringA);
+      screenLog("stringB", stringB);
 
       // ES6 문자열 (백틱)
       let myName = "taem";
       let oldString = "나의 이름은 " + myName + "입니다.";
       let es6String = `나의 이름은 ${myName}입니다.`;
-      console.log(oldString);
-      console.log(es6String);
+      screenLog(oldString);
+      screenLog(es6String);
 
       // 숫자형
       // 숫자 - 정수
       let num1 = 1;
       let num2 = 2;
-      console.log("num1 + num2:", num1 + num2);
+      screenLog("num1 + num2:", num1 + num2);
 
       // 숫자 - 실수
       let float1 = 0.1;
       let float2 = 1.1;
-      console.log("float1 + float2:", float1 + float2);
+      screenLog("float1 + float2:", float1 + float2);
 
       // 논리형
       let boolean1 = true;
       let boolean2 = false;
       let boolean3 = 10 < 20;
       let boolean4 = 10 > 20;
-      console.log("boolean1", boolean1);
-      console.log("boolean2", boolean2);
-      console.log("boolean3", boolean3);
-      console.log("boolean4", boolean4);
+      screenLog("boolean1", boolean1);
+      screenLog("boolean2", boolean2);
+      screenLog("boolean3", boolean3);
+      screenLog("boolean4", boolean4);
 
       // 객체
       // 배열
       let studentScore = [80, 70, 90, 60, 20];
       let emptyScore = []; // 빈 배열
-      console.log(studentScore);
-      console.log("studentScore[0]", studentScore[0]);
-      console.log("studentScore[1]", studentScore[1]);
-      console.log("studentScore[2]", studentScore[2]);
-      console.log("studentScore[3]", studentScore[3]);
-      console.log("studentScore.length", studentScore.length);
-      console.log("emptyScore.length", emptyScore.length);
+      screenLog(studentScore);
+      screenLog("studentScore[0]", studentScore[0]);
+      screenLog("studentScore[1]", studentScore[1]);
+      screenLog("studentScore[2]", studentScore[2]);
+      screenLog("studentScore[3]", studentScore[3]);
+      screenLog("studentScore.length", studentScore.length);
+      screenLog("emptyScore.length", emptyScore.length);
 
       // 객체 리터럴 Object
       let studentScoreObj = {
@@ -77,16 +77,16 @@
         mathScore: 90,
         scienceScore: 60,
       };
-      console.log("studentScoreObj.koreanScore", studentScoreObj.koreanScore);
-      console.log(
+      screenLog("studentScoreObj.koreanScore", studentScoreObj.koreanScore);
+      screenLog(
         "studentScoreObj['koreanScore']",
         studentScoreObj["koreanScore"]
       );
 
-      console.log(typeof es6String);
-      console.log(typeof float1);
-      console.log(typeof boolean1);
-      console.log(typeof studentScoreObj);
+      screenLog(typeof es6String);
+      screenLog(typeof float1);
+      screenLog(typeof boolean1);
+      screenLog(typeof studentScoreObj);
 
       const Head = document.getElementById("Head");
       const Head_explan = document.getElementById("Head_explan");
