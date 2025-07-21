@@ -9,8 +9,9 @@ let firstNumber = null;
 let operator = null;
 let isError = false;
 
-function calculate() {
+function calculate(firstNumber, currentInput, operator) {
     try {
+        console.log('Calculating with:', firstNumber, operator, currentInput);
         if (firstNumber === null || operator === null || !currentInput) {
             isError = true;
             throw new Error("계산에 필요한 값이 부족합니다.");

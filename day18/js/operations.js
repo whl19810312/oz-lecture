@@ -1,4 +1,5 @@
 export default function calculateOperation(firstNumber, secondNumber, operator) {
+    console.log(firstNumber +' ' + operator + ' ' + secondNumber +  ' = ');
     switch (operator) {
         case '+': return firstNumber + secondNumber;
         case '-': return firstNumber - secondNumber;
